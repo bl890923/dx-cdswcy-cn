@@ -1,0 +1,94 @@
+﻿	@charset "utf-8";
+/* CSS Document */
+body{background-color:#fff; overflow-x:hidden; color:#666; font-size:12px; font-family: microsoft yahei , "宋体"; position:relative;}/*网站字体颜色*/
+
+.header , .content , .footer , .container{margin-left:auto; margin-right:auto; width:1000px; font-family:microsoft yahei;}
+
+/*页眉*/
+.header{width:100%; overflow:hidden; background-color:#fff;}
+/*htop*/
+.htop{ background:#f2f7fa;}
+.htop .container{ height:39px; line-height:39px; overflow:hidden;}
+.htop em{ float:left;}
+.htop span{ float:right;}
+.htop span a{ display:inline-block; padding:0 9px; background:url(../images/topline.png) no-repeat right center;}
+.htop span .noBl{ background:none; padding-right:0;}
+/*hcont*/
+.hcont{ padding-top:20px; padding-bottom:30px;}
+.hcont .dlogo{ overflow:hidden; float:left; margin-top:10px;}
+.hcont .dlogo dt{ float:left;}
+.hcont .dlogo dt img{ display:block;}
+.hcont .dlogo dd{ margin-left:350px; margin-top:2px; text-align: center;}
+.hcont .dlogo dd h2{ font-size:20px; color:#125fa8; line-height:20px;}
+.hcont .dlogo dd p{ font-size:16px; color:#333; line-height:16px; margin-top:10px;}
+.hcont .dphone{ float:right;}
+.hcont .dphone dt{ color:#2fa5fd; line-height:31px; font-size:26px; padding-right:40px; background:url(../images/phone.png) no-repeat right center; text-align:right;}
+.hcont .dphone dd{ text-align:right; font-size:0; margin-top:10px;}
+.hcont .dphone dd span{ font-size:13px; color:#fff; display:inline-block; background:url(../images/yuan1.png) no-repeat center; width:64px; height:22px; line-height:22px; text-align:center; margin-left:5px;}
+
+/*navMain*/
+.navMain{ height:50px; background:url(../images/navbg.png) repeat-x center;}
+.navMain ul{ height:50px;}
+.navMain li{ float:left; width:100px; height:50px; position:relative;}
+.navMain li a{ display:block; text-align:center; height:50px; line-height:50px; font-size:15px; color:#333; background:url(../images/navline.png) repeat-y left center; text-decoration:none;}
+.navMain li a.noBg{ background:none;}
+.navMain li i{ display:block; background:url(../images/line.png) no-repeat center; width:100px; height:3px; position:absolute; top:-3px; left:0px; display:none;}
+.navMain li:hover a,.navMain li.cur a{ background:url(../images/navbg2.png) repeat-x center; color:#fff;}
+.navMain li:hover i,.navMain li.cur i{ display:block;}
+
+
+
+#gotop{display: block;	width: 15px; z-index:9999999;	margin-right: -528px;	position: fixed;	right: 50%;	top: 50%;	_margin-right: -525px;	_position: absolute;	_margin-top: 300px;	_top: expression(eval(document.documentElement.scrollTop));}
+#roll_top{position: relative;cursor: pointer;height: 72px;width: 26px;}
+#roll_top{background: url(../images/top.gif) no-repeat;}
+
+/*footer*/
+.footer{ width:100%; background-color:#212121; padding-top:43px; padding-bottom:24px;}
+.ftnav{ padding-bottom:35px; border-bottom:1px solid #383838;}
+.ftnav ul{ overflow:hidden;}
+.ftnav li{ float:left; padding:0 22px; background:url(../images/topline2.png) no-repeat left center;}
+.ftnav li.noBg{ background:none;}
+.ftnav li a{ font-size:14px; color:#bdbdbd;}
+
+.ftcont{ margin-top:35px;}
+.ftcont .ftc_l{ padding-bottom:8px; color:#fff; float:left; width:214px; text-align:right; padding-right:28px; border-right:1px dotted #383838;}
+.ftcont .ftc_l h5{ font-size:16px; line-height:16px; margin-top:28px; margin-bottom:8px;}
+.ftcont .ftc_l p{ font-size:14px; line-height:14px;}
+.ftcont .ftc_l dl{ padding-right:48px; background:url(../images/phone2.png) no-repeat right center; margin-top:30px;}
+.ftcont .ftc_l dd{ font-size:22px; line-height:22px; margin-top:3px;}
+.ftcont .ftc_m{ float:left; width:575px; border-right:1px dotted #383838;}
+.ftcont .ftc_m ul{ overflow:hidden; width:544px; margin:0 auto;}
+.ftcont .ftc_m li{ float:left; width:116px; margin:0 10px;}
+.ftcont .ftc_m li h5{ background:url(../images/ff.png) no-repeat center; width:116px; height:32px; line-height:32px; text-align:center; font-weight:normal; font-size:15px; color:#fff;}
+.ftcont .ftc_m li .sed{ margin-top:9px;}
+.ftcont .ftc_m li .sed p{ height:28px; line-height:28px; padding-left:26px; width:100px; position:relative;}
+.ftcont .ftc_m li .sed p img{ display:block;position: absolute;left: -107px;top: -84px; display:none;}
+.ftcont .ftc_m li .sed p:hover img{ display:block;}
+.ftcont .ftc_m li .sed p a{ font-size:13px; color:#ccc;}
+.ftcont .ftc_r{ float:right;}
+.ftcont .ftc_r img{ display:block;}
+
+.ftbot{ padding-top:25px; border-top:1px solid #383838;}
+.ftbot .dress{ float:left; color:#909090; width:420px;}
+.ftbot .dress ul{ overflow:hidden; margin-top:5px;}
+.ftbot .dress li{ float:left; padding-left:25px; line-height:24px; margin-right:15px;}
+.ftbot .dress li.dr1{ background:url(../images/dsbg1.png) no-repeat left center;}
+.ftbot .dress li.dr2{ background:url(../images/dsbg2.png) no-repeat left center;}
+.ftbot .dress li.dr3{ background:url(../images/dsbg3.png) no-repeat left center;}
+.ftbot .renz{ float:right;}
+.ftbot .renz ul{ overflow:hidden;}
+.ftbot .renz li{ float:left; margin-left:10px;}
+.ftbot .renz li img{ display:block;}
+
+
+
+.linkMain{ background-color:#333;}
+.linkMain .container{ overflow:hidden; padding:20px 0;}
+.linkMain h5{ float:left; font-size:16px; color:#fff; font-family:"Arial";}
+.linkMain h5 img{ vertical-align:middle;}
+.linkMain ul{ float:left; margin-left:40px; width:810px;}
+.linkMain li{ float:left; padding:0 15px; border-left:1px dotted #5c5c5c; line-height:22px;}
+.linkMain li a{ color:#fff;}
+.linkMain li.noBl{ border-left:none;}
+
+.bdsharebuttonbox{float:right;}
