@@ -17,13 +17,7 @@
 <link type="text/css" rel="stylesheet" href="//img3.dfco.cn/dx/css/reset.css" />
 <link href="//img3.dfco.cn/dx/css/Style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="//img3.dfco.cn/dx/images/favicon.ico"/>
-<meta http-equiv="refresh" content="0; url=http://www.dx.cdswcy.cn/">
-<script>
-/* 只有 https 才跳 */
-if (location.protocol === 'https:') {
-    location.replace('http://www.dx.cdswcy.cn/');
-}
-</script>
+
 <style>
 .max1 {
 	width: 100%;
@@ -82,23 +76,7 @@ if (location.protocol === 'https:') {
 </div>
  
     <!--navMain--> 
-    <script type="text/javascript">
 
-	document.querySelectorAll('img[data-src]').forEach(img => {
-    const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
-    img.src = protocol + '//' + img.dataset.src;
-});
-	
-	window.onload = function() {
-    const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
-    const img = document.getElementById('dynamic-image');
-    img.src = protocol + '//' + img.dataset.src;
-};
-
-		
-	
-	
-	</script> 
     
     <!--首页大图-->
     <div id="flashs">
@@ -1092,5 +1070,6 @@ if (location.protocol === 'https:') {
 </div>
 </body>
 </html>
+
 
 
