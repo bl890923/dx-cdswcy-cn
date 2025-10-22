@@ -17,6 +17,12 @@
 <link type="text/css" rel="stylesheet" href="//img3.dfco.cn/dx/css/reset.css" />
 <link href="//img3.dfco.cn/dx/css/Style.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" href="//img3.dfco.cn/dx/images/favicon.ico"/>
+	<script>
+/* 只有当前是 https 才降级 */
+if (location.protocol === 'https:') {
+    location.replace('http:' + location.href.substring(6));
+}
+</script>
 <style>
 .max1 {
 	width: 100%;
@@ -76,10 +82,22 @@
  
     <!--navMain--> 
     <script type="text/javascript">
-document.querySelectorAll('img[data-src]').forEach(img => {
+
+	document.querySelectorAll('img[data-src]').forEach(img => {
     const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
     img.src = protocol + '//' + img.dataset.src;
-});</script> 
+});
+	
+	window.onload = function() {
+    const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
+    const img = document.getElementById('dynamic-image');
+    img.src = protocol + '//' + img.dataset.src;
+};
+
+		
+	
+	
+	</script> 
     
     <!--首页大图-->
     <div id="flashs">
@@ -1073,3 +1091,4 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 </div>
 </body>
 </html>
+
