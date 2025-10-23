@@ -1,0 +1,124 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.mian{position:relative; margin-left:auto; margin-right:auto; min-width:320px; max-width:640px; overflow:hidden; background-color:#fff; font-family:Microsoft YaHei;}
+a{text-decoration:none; color:#666;}
+
+
+.header{ padding:4%;}
+.header dl{ overflow:hidden;}
+.header dt{ float:left;}
+.header dt img{ display:block; width:7.167em;}
+.header dd{ margin-left:9em; padding-left:2em; border-left:1px dotted #c1c1c1;}
+.header dd h2{ font-size:1.3em; color:#005eac;}
+.header dd p{ font-size:1em; color:#000; margin-top:0.2em;}
+.header dd a{ font-size:1.4em; color:#097fd8; font-family:"Arial"; padding-left:2.2em; background:url(../images/phone.png) no-repeat left center; display:inline-block; height:2em; background-size:1.6em; line-height:2em;}
+.dress{ background-color:#434343; padding:1.25em 0; color:#8a8a8a;}
+.dress p{ font-size:1em; padding-left:4%;}
+.dress ul{ overflow:hidden; margin:4%;}
+.dress li{ float:left; padding-left:1.5em; height:1.6em; line-height:1.6em; font-size:1em;}
+.dress li:nth-child(1){ background:url(../images/ds1.png) no-repeat left center; background-size:1.25em;}
+.dress li:nth-child(2){ background:url(../images/ds2.png) no-repeat left center; background-size:1.25em;}
+.dress li:nth-child(3){ background:url(../images/ds3.png) no-repeat left center; background-size:1.25em;}
+
+
+.rt{ margin-bottom:4em; cursor:pointer;}
+.rt img{ display:block; width:100%;}
+
+
+.nav{ overflow:hidden; position:relative;}
+.nav:after{ content: '';position:absolute; top:50%; left:0; z-index:9; height:0; width:100% ;border-top:1px solid #fff;}
+.nav li{ float:left; width:25%; position:relative;
+background-image: -moz-linear-gradient(top, #3a3a3a, #0f0f0f); /* Firefox */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3a3a3a), color-stop(1, #0f0f0f)); /* Saf4+, Chrome */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3a3a', endColorstr='#0f0f0f', GradientType='0'); /* IE*/}
+.nav li:after{ content: '';position:absolute; top:0; left:-1px; z-index:9; height:100%; width:0 ;border-left:1px solid #fff;}
+.nav li a{ display:block; padding:1.2em 0; text-align:center; font-size:1em; color:#fff;}
+
+
+
+.footer{ overflow:hidden; position:fixed; bottom:0; width:100%; left:0; z-index:999;
+background-image: -moz-linear-gradient(top, #31a7ff, #0075cf); /* Firefox */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #31a7ff), color-stop(1, #0075cf)); /* Saf4+, Chrome */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#31a7ff', endColorstr='#0075cf', GradientType='0'); /* IE*/ }
+.footer li{ float:left; width:22%; background:url(../images/ftbg.png) repeat-y right center;}
+.footer li.bot{ height:4em; background:url(../images/bot.png) no-repeat center; background-size:1.5em; width:12%; cursor:pointer;}
+.footer li a{ display:block; padding:0.5em 0;}
+.footer li a img{ display:block; width:1.8em; margin:0 auto;}
+.footer li a span{ display:block; text-align:center; font-size:1em; color:#fff;}
+
+
+
+/*----------------------- binPlus ---------------------------------*/
+
+.elastic.toRight{right:0;}
+.elastic.toRight p i{-webkit-transform: rotate(180deg);
+-moz-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
+background-position:center;}
+.binPlus{position:fixed; right:0; top:-24px; display:none; overflow:scroll; z-index:99; width:7.5em; height:100%; background-color:rgba(0,0,0,0.8);}
+.binPlus ul{padding:1em 0; width:100%;}
+.binPlus ul li{text-align:center; height:6.8em; margin-bottom:1em;}
+.binPlus ul li img{width:4.792em;}
+.binPlus ul li h5{margin-top:0.4em; font-weight:normal; font-size:1em;}
+.binPlus ul li h5 a{color:#fff;}
+.binPlus .btnDown{position:fixed; right:0; bottom:0; width:7.5em; height:4em;
+background-color:rgba(0,0,0,0); 
+background-image:-moz-linear-gradient(top , rgba(0,0,0,0) , rgba(0,0,0,0.8));
+background-image:-webkit-linear-gradient(top , rgba(0,0,0,0) , rgba(0,0,0,0.8));
+background-image:-o-linear-gradient(top , rgba(0,0,0,0) , rgba(0,0,0,0.8));
+background-image:-ms-linear-gradient(top , rgba(0,0,0,0) , rgba(0,0,0,0.8));
+background-image:linear-gradient(top , rgba(0,0,0,0) , rgba(0,0,0,0.8));}
+.binPlus .btnDown i{position:absolute; width:100%; height:100%; background:url(../images/btnDown_ico.png) no-repeat center; background-size:1.667em auto;}
+/*----------------------- binPlus ---------------------------------*/
+
+@media screen and (min-width:320px) {
+	body{font-size:75%;}
+}
+@media screen and (min-width:375px) {
+	body{font-size:87.5%;}
+}
+@media screen and (min-width:480px) {
+	body{font-size:87.5%;}
+}
+@media screen and (min-width:540px) {
+	body{font-size:112.5%;}
+}
+@media screen and (min-width:550px) {
+	body{font-size:125%;}
+}
+@media screen and (min-width:640px) {
+	body{font-size:150%;}
+}
+.CategoryList_Title{height:2.968em; line-height:2.968em; padding:0 .687em; color:#333; text-align:center; border-bottom:1px solid #b0b4bb; font-size:1.125em; background: linear-gradient(180deg , #f2f2f2 0% , #e0e0e0 100%);}
+.CategoryList_Title i{font-size:1.2em; margin-top:.75em;}
+.CategoryList_Title .icon-details{margin-right:.5em;}
+
+
+/*分类列表*/
+.CategoryLista{}
+.CategoryLista > li > a{height:3.031em; line-height:3.031em; display:block; color:#333; background:#f4f4f4; padding:0 1.125em; border-bottom:1px solid #cfcbc1; border-top:1px solid #fff; font-size:1.125em;}
+.CategoryLista li i{float:right; margin-top:.45em; color:#656565; font-weight:bold; font-size:1.6em;}
+.CategoryLista > li li a{height:3.031em; line-height:3.031em; overflow:hidden; white-space: nowrap; text-overflow:ellipsis; display:block; color:#666; background:#fff; padding:0 2.062em; border-bottom:1px solid #cfcbc1; border-top:1px solid #fff; font-size:1em;}
+.CategoryLista li:after {content:'.'; display:block; height:0; clear:both; visibility:hidden;}
+.CategoryLista .icon-arrow-down{color:#f90;}
+.CategoryLista > li > ul >li >ul{padding:0 1.125em;}
+.CategoryLista > li > .list1,.CategoryLista > li > .list1 li ul{display:none;}
+
+/*搜索*/
+.searchSpan{position:relative; overflow:hidden; margin:.687em;}
+.searchSpan .txtSearch{height:33px; border-radius:5px; border:1px solid #ddd; font-size:.75em; text-indent:.25em; width:99.9%; outline:none;}
+.searchSpan .btnSearch{position:absolute; right:0px; top:1px; border-radius:0 5px 5px 0; display:block; height:33px; line-height:33px; color:#333; width:2.5em; border-left:1px solid #ddd; border-right:1px solid #ddd; text-align:center; background:linear-gradient(180deg , #fff 0% , #ededed 100%);}
+
+
+
+
+
+
+
+
+
+
+
+
