@@ -1,6 +1,10 @@
+#
+# robots.txt for EmpireCMS
+#
+
 User-agent: *
 
-Disallow: http://img3.dfco.cn/d/
+Disallow: /d/
 Disallow: /e/class/
 Disallow: /e/config/
 Disallow: /e/data/
